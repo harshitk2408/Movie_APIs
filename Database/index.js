@@ -2,7 +2,7 @@ import pkg from 'pg';
 const { Pool } = pkg;
 import 'dotenv/config'
 const pool = new Pool({
-    host: 'localhost',
+    host: process.env.host,
     port: process.env.port,
     database: process.env.database,
     user: process.env.user,
