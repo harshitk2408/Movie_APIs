@@ -3,7 +3,7 @@ const { Pool } = pkg;
 import 'dotenv/config'
 const pool = new Pool({
     host: 'localhost',
-    port: '5433',
+    port: '5432',
     database: process.env.database,
     user: process.env.user,
     password:process.env.password
