@@ -6,8 +6,8 @@ var corsOptions = {
     methods: ['GET', 'PUT', 'POST', 'PATCH', 'UPDATE', 'DELETE'],
     credentials:true
 }
-app.use(cors(corsOptions));
 const app = express();
+app.use(cors(corsOptions));
 const PORT = 3000;
 app.use(express.json());
 app.use("/api/",router);
