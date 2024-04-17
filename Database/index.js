@@ -3,7 +3,6 @@ dotenv.config();
 import { MongoClient } from 'mongodb';
 // MongoDB connection string
 const uri = process.env.URI;
-console.log(uri);
 
 // Create a new MongoClient instance
 const client = new MongoClient(uri);
