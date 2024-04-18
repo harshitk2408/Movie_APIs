@@ -61,6 +61,7 @@ const movieController = {
           $project: {
             movie_name: 1,
             movie_id: 1,
+            poster:1,
           },
         },
       ]).toArray();
