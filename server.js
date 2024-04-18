@@ -2,7 +2,7 @@ import express from "express";
 import router from "./Router/movieRouter.js";
 import cors from 'cors';
 var corsOptions = {
-    origin:  'http://localhost:5173',
+    origin:  '*',
     methods: ['GET', 'PUT', 'POST', 'PATCH', 'UPDATE', 'DELETE'],
     credentials:true
 }
